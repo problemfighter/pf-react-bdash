@@ -10,6 +10,5 @@ dependencies:
       - url: "https://github.com/problemfighter/pf-react-boot.git"
 
 before_end:
-  - python pweb_cli.py develop
   - npm install -g yarn
   - yarn install
