@@ -1,0 +1,15 @@
+dependencies:
+  - dir: "dev-dependencies/ui"
+    branch: "dev"
+    mode:
+      - dev
+    repo:
+      - url: "https://github.com/problemfighter/pf-boot-spec.git"
+      - url: "https://github.com/problemfighter/pf-pweb-react.git"
+      - url: "https://github.com/problemfighter/pf-react.git"
+      - url: "https://github.com/problemfighter/pf-react-boot.git"
+
+before_end:
+  - python pweb_cli.py develop
+  - npm install -g yarn
+  - yarn install
